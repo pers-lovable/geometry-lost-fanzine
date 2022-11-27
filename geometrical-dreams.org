@@ -1,0 +1,54 @@
+Retro production review
+##################
+
+Geometrical Dreams - what are they and why do we want them? These
+questions were answered by the demo group The Silents in 15 June
+1991 at the Eskilstuna Computer Entertainment Show (ECES), where they
+entered the demo competition with a dentro with this name.
+
+A dentro is a rare type of production classified somewhere between a
+demo and an intro, and GD has a run time of about five minute - quite
+typical for such productions. It was created for Amiga OCS, and was
+made as a taste of a forth coming demo called Power and Glory (which
+as far as I know never saw the light of day).
+
+It was made in an age when showcasing rotating vector objects - 3d
+models rendered using polygons - was very popular, and The Silents
+chose a big vector ball as the main attraction - in its zoomed in view
+it fills the whole screen at a decent frame rate. They explain that
+the vector routine is still unoptimized, and can be sped up by at
+least 10%. The overall dentro composition consists of transitioning
+between a vector object, showing a bitmap picture and showing
+information text and greetings.
+
+A nice, geometrical detail is the vector object representing the
+group's name abbreviation, TSL:
+
+12345##### ######
+    # #    #
+    # #### #
+    #    # #
+    ###### #####
+
+The music is what I liked the most about the demo. It is in typical The
+Silents style, and has a catchy melody with instruments I seem to
+recall from other productions by the group.
+
+So can we make any sense of these dreams? What it is the legacy of
+this dentro, and does it have any implications in the year 2022? As the
+group members say themselves, it is not meant to be a big milestone -
+they claim it was made in three days with bits lying around, and in
+the competition it ended up in second place. With that said, it is
+still a nice dentro to watch today in the style of its time, and I
+even remember the tune today, from hearing it back in 1991. For all of
+us who long for a final geometrical dream in our life, this splash of
+colour and bold four track sound is a technological sparkler, albeit a
+modest one.
+
+Credits:
+Music - Blaizer and Marillion
+Graphics - Atlas and Chevron
+Coding - Delery
+
+[[qrcode.png]]
+[[geo.png]]

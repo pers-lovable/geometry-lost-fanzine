@@ -1,0 +1,10 @@
+#+LATEX_CLASS: article
+#+TITLE: Geometry Lost #2
+#+AUTHOR: Joakim Verona, Per Weijnitz, AI, SGC
+#+DATE: 2022-12-05
+#+OPTIONS: author:t date:t email:t ^:nil
+
+#+ATTR_LATEX: :width 5cm
+
+* Bra första sektion
+Hej.

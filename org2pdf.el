@@ -13,7 +13,8 @@
   (org-latex-export-to-pdf))
 
 
-(ignore-errors (or (make-pdf) t))
+;;(ignore-errors (or (make-pdf) t))
+ (make-pdf)
 
 (switch-to-buffer "*Org PDF LaTeX Output*")
 ;(write-file "output/org-pdf-latex-output.txt" nil)

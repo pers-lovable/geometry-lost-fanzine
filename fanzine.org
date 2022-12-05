@@ -8,3 +8,17 @@
 
 * Bra första sektion
 Hej.
+
+file:/data/geometry-lost.png
+
+#+INCLUDE: /data/geometric-man.org
+
+#+INCLUDE: /data/geometric-metafors.org
+
+#+INCLUDE: /data/sthlm-geometry.org
+
+#+INCLUDE:  /data/geometrical-dreams.org
+
+file:/data/geometric-man.png
+file:/data/geometry-failed.png
+

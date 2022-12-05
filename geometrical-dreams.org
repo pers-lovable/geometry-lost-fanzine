@@ -1,5 +1,5 @@
-Retro production review
-##################
+
+* Retro production review
 
 Geometrical Dreams - what are they and why do we want them? These
 questions were answered by the demo group The Silents in 15 June
@@ -24,11 +24,14 @@ information text and greetings.
 A nice, geometrical detail is the vector object representing the
 group's name abbreviation, TSL:
 
+#+begin_verse
 12345##### ######
     # #    #
     # #### #
     #    # #
     ###### #####
+
+#+end_verse
 
 The music is what I liked the most about the demo. It is in typical The
 Silents style, and has a catchy melody with instruments I seem to
@@ -50,5 +53,5 @@ Music - Blaizer and Marillion
 Graphics - Atlas and Chevron
 Coding - Delery
 
-[[qrcode.png]]
-[[geo.png]]
+[[/data/qrcode.png]]
+[[/data/geo.png]]

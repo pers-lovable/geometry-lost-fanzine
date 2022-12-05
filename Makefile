@@ -1,6 +1,6 @@
 .ONESHELL:
 IMAGENAME = fanzine-builder
-OUTPUTDIR = output
+OUTPUTDIR = $(PWD)/output
 
 all: build run
 
@@ -11,7 +11,7 @@ build:
 
 run: $(OUTPUTDIR)/
 	rm -f $(OUTPUTDIR)/report.pdf
-	podman run --rm -i -v $(PWD):/data -v $(OUTPUTDIR):/outputdir  $(IMAGENAME)
+	podman run --rm -i -v $(PWD):/data:Z -v $(OUTPUTDIR):/outputdir:Z  $(IMAGENAME)
 
 clean:
 	if podman image inspect $(IMAGENAME) >/dev/null 2>/dev/null; then

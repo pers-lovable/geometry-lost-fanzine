@@ -1,0 +1,11 @@
+* TODO write really great Fanzine
+** DONE define constraint, to trigger creativity
+CLOSED: [2022-12-06 Tue 15:18]
+"Geometry" chosen after intense debate
+** DONE decide which technical platform to use
+CLOSED: [2022-12-06 Tue 15:19]
+Of course we decided on emacs, org-mode, and a makefile, latex, docker
+container horror show!
+** DONE fantastic art-work
+CLOSED: [2022-12-06 Tue 15:20]
+Well, time is a constraint as well...

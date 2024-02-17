@@ -22,7 +22,7 @@ generate:
   - |
     mkdir output
     export TEXMFOUTPUT=output
-    export OUTPUT_DIR=output
+    export OUTPUT_DIR=$PWD/output
     export DATA_DIR=.
     export REPORT_SOURCE_FILE=fanzine.org
     emacs --batch --load org2pdf.el

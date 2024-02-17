@@ -2,22 +2,27 @@
 #+TITLE: Geometry Lost #2
 #+AUTHOR: Joakim Verona, Per Weijnitz, AI, SGC
 #+DATE: 2022-12-05
-#+OPTIONS: author:t date:t email:t ^:nil
-
+#+OPTIONS: author:t date:t ^:nil
 #+ATTR_LATEX: :width 5cm
-
-* Bra första sektion
-Hej.
 
 file:geometry-lost.png
 
+\newpage
+
+#+INCLUDE: sthlm-geometry.org
+
+\newpage
+
 #+INCLUDE: geometric-man.org
+
+\newpage
 
 #+INCLUDE: geometric-metafors.org
 
-#+INCLUDE: sthlm-geometry.org
+\newpage
 
 #+INCLUDE:  geometrical-dreams.org
 
 file:geometric-man.png
+
 file:geometry-failed.png

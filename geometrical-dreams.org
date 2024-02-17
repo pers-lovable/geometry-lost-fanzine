@@ -1,57 +1,61 @@
+* Geometric Reverie: Exploring the Retro Productions Scene
 
-* Retro production review
+Ever wondered about the allure of Geometrical Dreams? Dive into the
+captivating world unveiled by the demo group The Silents on a fateful
+day, June 15th, 1991, at the Eskilstuna Computer Entertainment Show
+(ECES). There, amidst the fervor of the demo competition, they
+unveiled their masterpiece - a dentro like no other.
 
-Geometrical Dreams - what are they and why do we want them? These
-questions were answered by the demo group The Silents in 15 June
-1991 at the Eskilstuna Computer Entertainment Show (ECES), where they
-entered the demo competition with a dentro with this name.
+A dentro, that elusive creation nestled between a demo and an intro,
+emerged into the limelight with Geometrical Dreams, or GD for the
+initiated. With a runtime of approximately five minutes - a standard
+for such marvels - GD was tailored for the Amiga OCS, teasing the
+audience with a glimpse of the forthcoming demo, Power and Glory (a
+legend whispered but never realized).
 
-A dentro is a rare type of production classified somewhere between a
-demo and an intro, and GD has a run time of about five minute - quite
-typical for such productions. It was created for Amiga OCS, and was
-made as a taste of a forth coming demo called Power and Glory (which
-as far as I know never saw the light of day).
+Picture this: a time when the spectacle of rotating vector objects,
+those 3D marvels birthed from polygons, held sway over the hearts of
+enthusiasts. The Silents, in their wisdom, chose a grand vector ball
+as the pièce de résistance, dominating the screen with its hypnotic
+gyrations. Though they confessed their vector routine remained
+unoptimized, hinting at a hidden potential for speed enhancement, it
+hardly detracted from the overall spectacle.
 
-It was made in an age when showcasing rotating vector objects - 3d
-models rendered using polygons - was very popular, and The Silents
-chose a big vector ball as the main attraction - in its zoomed in view
-it fills the whole screen at a decent frame rate. They explain that
-the vector routine is still unoptimized, and can be sped up by at
-least 10%. The overall dentro composition consists of transitioning
-between a vector object, showing a bitmap picture and showing
-information text and greetings.
+But let's not overlook the finer details. Behold, the graceful arc of
+the vector object bearing the sacred insignia, TSL, an ode to The
+Silents' legacy:
 
-A nice, geometrical detail is the vector object representing the
-group's name abbreviation, TSL:
-
-#+begin_verse
-12345##### ######
+#+begin_example
+##### ######
     # #    #
     # #### #
     #    # #
     ###### #####
 
-#+end_verse
+#+end_example
 
-The music is what I liked the most about the demo. It is in typical The
-Silents style, and has a catchy melody with instruments I seem to
-recall from other productions by the group.
+Ah, the music! A symphony in the unmistakable style of The Silents,
+weaving a tapestry of melodies that echo through the corridors of
+time. Each note a whisper from the past, invoking memories of
+productions long cherished.
 
-So can we make any sense of these dreams? What it is the legacy of
-this dentro, and does it have any implications in the year 2022? As the
-group members say themselves, it is not meant to be a big milestone -
-they claim it was made in three days with bits lying around, and in
-the competition it ended up in second place. With that said, it is
-still a nice dentro to watch today in the style of its time, and I
-even remember the tune today, from hearing it back in 1991. For all of
-us who long for a final geometrical dream in our life, this splash of
-colour and bold four track sound is a technological sparkler, albeit a
-modest one.
+Now, as we ponder the legacy of this dream, what implications does it
+hold in the year 2022? True, The Silents themselves downplay its
+significance, deeming it a spontaneous creation, born in the crucible
+of three days and assembled from scattered fragments. Yet, it clinched
+the second spot in the competition, leaving an indelible mark on those
+who beheld its splendor.
+
+For those of us who yearn for one last geometric reverie, GD stands as
+a beacon of hope. Its vibrant hues and resounding four-track symphony
+serve as a testament to the technological marvels of yore, a modest
+sparkler illuminating the path toward artistic transcendence.
 
 Credits:
 Music - Blaizer and Marillion
 Graphics - Atlas and Chevron
 Coding - Delery
+
 
 [[file:qrcode.png]]
 [[file:geo.png]]

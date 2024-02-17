@@ -17,11 +17,16 @@ generate:
   - echo $CI_JOB_ID
   - echo GE_JOB_ID=$CI_JOB_ID >> generate.env
   - apt-get -y update
-  - apt-get -y install emacs-nox texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-font-utils
+  - apt-get -y install emacs-nox texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-font-utils git
   script:
-  - mkdir output
-  - env TEXMFOUTPUT=output OUTPUT_DIR=output DATA_DIR=. REPORT_SOURCE_FILE=fanzine.org emacs --batch --load org2pdf.el
-  - echo "generation successful"
+  - |
+    mkdir output
+    export TEXMFOUTPUT=output
+    export OUTPUT_DIR=output
+    export DATA_DIR=.
+    export REPORT_SOURCE_FILE=fanzine.org
+    emacs --batch --load org2pdf.el
+    echo "generation successful"
   artifacts:
     paths:
     - output

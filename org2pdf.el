@@ -2,15 +2,13 @@
   (interactive)
   (customize-set-variable 'org-export-with-sub-superscripts nil)
   (customize-set-variable 'org-export-with-emphasize nil)
-  (find-file (concat data-dir "/" report-source-file))
-;(find-file "fanzine.org")
-  (set-buffer report-source-file)
-  (add-to-list 'org-latex-default-packages-alist "\\PassOptionsToPackage{hyphens}{url}")
-  (customize-set-value 'org-latex-hyperref-template "\\hypersetup{\n pdfauthor={%a},\n pdftitle={%t},\n pdfkeywords={%k}, pdfsubject={%d},\n pdfcreator={%c},\n pdflang={%L},\n colorlinks=true,urlcolor=blue,linkcolor=blue}\n")
- ;(let ((default-directory "~/proj/geometry-lost-fanzine/output"))
- ;  (org-latex-export-to-pdf))
-  (cd output-dir)
-  (org-latex-export-to-pdf))
+  (let ((default-directory data-dir))
+    (find-file report-source-file)
+    (set-buffer report-source-file)
+    (add-to-list 'org-latex-default-packages-alist "\\PassOptionsToPackage{hyphens}{url}")
+    (customize-set-value 'org-latex-hyperref-template "\\hypersetup{\n pdfauthor={%a},\n pdftitle={%t},\n pdfkeywords={%k}, pdfsubject={%d},\n pdfcreator={%c},\n pdflang={%L},\n colorlinks=true,urlcolor=blue,linkcolor=blue}\n"))
+  (let ((default-directory output-dir))
+    (org-latex-export-to-pdf)))
 
 
 (let*

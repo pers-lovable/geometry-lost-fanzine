@@ -23,6 +23,12 @@ file:geometry-lost.png
 
 #+INCLUDE:  geometrical-dreams.org
 
+\newpage
+
 file:geometric-man.png
 
 file:geometry-failed.png
+
+\newpage
+
+#+INCLUDE:  boullee.org

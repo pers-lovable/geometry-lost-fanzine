@@ -17,9 +17,10 @@ generate:
   - echo $CI_JOB_ID
   - echo GE_JOB_ID=$CI_JOB_ID >> generate.env
   - apt-get -y update
-  - apt-get -y install texlive-latex-extra emacs-nox make
+  - apt-get -y install emacs-nox texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-font-utils
   script:
-  - make
+  - mkdir output
+  - env TEXMFOUTPUT=output emacs --batch --load /app/org2pdf.el
   - echo "generation successful"
   artifacts:
     paths:

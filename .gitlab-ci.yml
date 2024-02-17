@@ -35,7 +35,7 @@ generate:
     echo "generation successful"
   artifacts:
     paths:
-    - release
+    - release/fanzine.pdf
     reports:
       dotenv: generate.env
   only:

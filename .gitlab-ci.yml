@@ -17,19 +17,25 @@ generate:
   - echo $CI_JOB_ID
   - echo GE_JOB_ID=$CI_JOB_ID >> generate.env
   - apt-get -y update
-  - apt-get -y install emacs-nox texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-font-utils git rsync
+  - apt-get -y install emacs-nox texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-font-utils git rsync inkscape
   script:
   - |
+    inkscape geometry-lost.svg -o output/geometry-lost.png
+    inkscape geometric-man.svg -o output/geometric-man.png
+    inkscape geometry-failed.svg -o output/geometry-failed.png
     mkdir output
     export TEXMFOUTPUT=output
     export OUTPUT_DIR=$PWD/output
     export DATA_DIR=.
     export REPORT_SOURCE_FILE=fanzine.org
     emacs --batch --load org2pdf.el
+    mkdir release
+    mv output/org-pdf-latex-output.txt release/
+    mv output/fanzine.pdf release/fanzine.pdf
     echo "generation successful"
   artifacts:
     paths:
-    - output
+    - release
     reports:
       dotenv: generate.env
   only:
@@ -52,6 +58,6 @@ release:
     assets:
       links:
       - name: Geometry Lost Fanzine
-        url: https://gitlab.com/sgc1000/geometry-lost-fanzine/-/jobs/${GE_JOB_ID}/artifacts/browse/output/
+        url: https://gitlab.com/sgc1000/geometry-lost-fanzine/-/jobs/${GE_JOB_ID}/artifacts/browse/release/
   only:
   - main

@@ -1,0 +1,51 @@
+workflow:
+  rules:
+  - if: "$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH"
+
+include:
+- template: Security/Dependency-Scanning.gitlab-ci.yml
+
+stages:
+- generate
+- release
+- test
+
+generate:
+  stage: generate
+  image: debian:stable
+  before_script:
+  - echo $CI_JOB_ID
+  - echo GE_JOB_ID=$CI_JOB_ID >> generate.env
+  - apt-get -y update
+  - apt-get -y install texlive-latex-extra emacs-nox make
+  script:
+  - make
+  - echo "generation successful"
+  artifacts:
+    paths:
+    - output
+    reports:
+      dotenv: generate.env
+  only:
+  - main
+
+release:
+  stage: release
+  image: registry.gitlab.com/gitlab-org/release-cli:latest
+  script:
+  - echo 'running release_job'
+  - echo 'Previous Job ID is printed below'
+  - echo $GE_JOB_ID
+  needs:
+  - job: generate
+    artifacts: true
+  release:
+    name: Release $CI_COMMIT_SHORT_SHA
+    description: Created using the release-cli
+    tag_name: "$CI_COMMIT_SHORT_SHA"
+    assets:
+      links:
+      - name: Geometry Lost Fanzine
+        url: https://gitlab.com/sgc1000/geometry-lost-fanzine/-/jobs/${GE_JOB_ID}/artifacts/browse/output/
+  only:
+  - main

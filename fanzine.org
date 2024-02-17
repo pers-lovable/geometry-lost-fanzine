@@ -9,16 +9,15 @@
 * Bra första sektion
 Hej.
 
-file:/data/geometry-lost.png
+file:geometry-lost.png
 
-#+INCLUDE: /data/geometric-man.org
+#+INCLUDE: geometric-man.org
 
-#+INCLUDE: /data/geometric-metafors.org
+#+INCLUDE: geometric-metafors.org
 
-#+INCLUDE: /data/sthlm-geometry.org
+#+INCLUDE: sthlm-geometry.org
 
-#+INCLUDE:  /data/geometrical-dreams.org
+#+INCLUDE:  geometrical-dreams.org
 
-file:/data/geometric-man.png
-file:/data/geometry-failed.png
-
+file:geometric-man.png
+file:geometry-failed.png

@@ -53,5 +53,5 @@ Music - Blaizer and Marillion
 Graphics - Atlas and Chevron
 Coding - Delery
 
-[[/data/qrcode.png]]
-[[/data/geo.png]]
+[[qrcode.png]]
+[[geo.png]]

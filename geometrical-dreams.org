@@ -1,10 +1,12 @@
-* Geometric Reverie: Exploring the Retro Productions Scene
+* Geometric Reverie in the Early 90's Demo Scene
 
-Ever wondered about the allure of Geometrical Dreams? Dive into the
-captivating world unveiled by the demo group The Silents on a fateful
-day, June 15th, 1991, at the Eskilstuna Computer Entertainment Show
-(ECES). There, amidst the fervor of the demo competition, they
-unveiled their masterpiece - a dentro like no other.
+Ever wondered about the allure of Geometrical Dreams? The demo group
+The Silents sure did on a fateful day, June 15th, 1991, at the
+Eskilstuna Computer Entertainment Show (ECES). There, amidst the
+fervor of the demo competition, they unveiled their masterpiece - a
+dentro like no other.
+
+[[file:geo.png]]
 
 A dentro, that elusive creation nestled between a demo and an intro,
 emerged into the limelight with Geometrical Dreams, or GD for the
@@ -21,8 +23,10 @@ gyrations. Though they confessed their vector routine remained
 unoptimized, hinting at a hidden potential for speed enhancement, it
 hardly detracted from the overall spectacle.
 
-But let's not overlook the finer details. Behold, the graceful arc of
-the vector object bearing the sacred insignia, TSL, an ode to The
+\newpage
+
+But let's not overlook the finer details. Here is the fully
+symmetrical representation of the group's insignia, TSL, an ode to The
 Silents' legacy:
 
 #+begin_example
@@ -51,11 +55,15 @@ a beacon of hope. Its vibrant hues and resounding four-track symphony
 serve as a testament to the technological marvels of yore, a modest
 sparkler illuminating the path toward artistic transcendence.
 
+\vspace{1.5cm}
+
 Credits:
+
 Music - Blaizer and Marillion
+
 Graphics - Atlas and Chevron
+
 Coding - Delery
 
 
 [[file:qrcode.png]]
-[[file:geo.png]]

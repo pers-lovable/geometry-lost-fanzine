@@ -20,7 +20,7 @@ generate:
   - apt-get -y install emacs-nox texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-font-utils
   script:
   - mkdir output
-  - env TEXMFOUTPUT=output emacs --batch --load /app/org2pdf.el
+  - env TEXMFOUTPUT=output emacs --batch --load org2pdf.el
   - echo "generation successful"
   artifacts:
     paths:

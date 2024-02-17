@@ -20,10 +20,10 @@ generate:
   - apt-get -y install emacs-nox texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-font-utils git rsync inkscape
   script:
   - |
+    mkdir output
     inkscape geometry-lost.svg -o output/geometry-lost.png
     inkscape geometric-man.svg -o output/geometric-man.png
     inkscape geometry-failed.svg -o output/geometry-failed.png
-    mkdir output
     export TEXMFOUTPUT=output
     export OUTPUT_DIR=$PWD/output
     export DATA_DIR=.

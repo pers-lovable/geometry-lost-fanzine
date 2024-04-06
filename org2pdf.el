@@ -22,10 +22,6 @@
     ((data-dir (or (getenv "DATA_DIR") "/data"))
      (output-dir (or (getenv "OUTPUT_DIR") "/outputdir"))
      (report-source-file (or (getenv "REPORT_SOURCE_FILE") "fanzine.org")))
-
-  ;;(ignore-errors (or (make-pdf) t))
   (make-pdf data-dir output-dir report-source-file)
-
   (switch-to-buffer "*Org PDF LaTeX Output*")
-  ;;(write-file "output/org-pdf-latex-output.txt" nil)
   (write-file (concat output-dir "/org-pdf-latex-output.txt" nil)))

@@ -2,33 +2,22 @@
 #  rules:
 #  - if: "$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH"
 
-include:
-- template: Security/Dependency-Scanning.gitlab-ci.yml
 
-stages:
-- generate
-- release
-- test
+
+include:
+- template: Auto-DevOps.gitlab-ci.yml
+
+
 
 generate:
   stage: generate
-  image: debian:stable
+  image: $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:$CI_COMMIT_SHA
   before_script:
   - echo $CI_JOB_ID
   - echo GE_JOB_ID=$CI_JOB_ID >> generate.env
-  - apt-get -y update
-  - apt-get -y install emacs-nox texlive-latex-base texlive-latex-extra texlive-latex-recommended texlive-font-utils git rsync inkscape
   script:
   - |
-    mkdir output
-    inkscape geometry-lost.svg -o output/geometry-lost.png
-    inkscape geometric-man.svg -o output/geometric-man.png
-    inkscape geometry-failed.svg -o output/geometry-failed.png
-    export TEXMFOUTPUT=output
-    export OUTPUT_DIR=$PWD/output
-    export DATA_DIR=.
-    export REPORT_SOURCE_FILE=fanzine.org
-    emacs --batch --load org2pdf.el
+    make
     mkdir release
     mv output/org-pdf-latex-output.txt release/
     mv output/fanzine.pdf release/fanzine.pdf
@@ -40,6 +29,8 @@ generate:
       dotenv: generate.env
   only:
   - main
+
+
 
 release:
   stage: release

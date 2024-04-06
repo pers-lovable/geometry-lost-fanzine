@@ -1,6 +1,6 @@
-workflow:
-  rules:
-  - if: "$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH"
+#workflow:
+#  rules:
+#  - if: "$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH"
 
 include:
 - template: Security/Dependency-Scanning.gitlab-ci.yml

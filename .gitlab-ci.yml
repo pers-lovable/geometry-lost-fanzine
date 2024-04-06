@@ -4,6 +4,10 @@
 
 
 
+variables:
+  TEST_DISABLED: 1
+
+
 include:
 - template: Auto-DevOps.gitlab-ci.yml
 

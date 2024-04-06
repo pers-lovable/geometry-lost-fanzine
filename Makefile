@@ -11,7 +11,7 @@ IMAGES             = geometry-lost.png geometric-man.png geometry-failed.png
 NR_SHAPES          = 5
 
 # comment in to compile locally w/o podman
-#RUN_LOCAL          = 1
+RUN_LOCAL          = 1
 
 
 

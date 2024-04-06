@@ -1,33 +1,32 @@
-* Geometric Reverie in the Early 90's Demo Scene
+* Early 90's Demo Scene Production Review
 
-Ever wondered about the allure of Geometrical Dreams? The demo group
-The Silents sure did on a fateful day, June 15th, 1991, at the
-Eskilstuna Computer Entertainment Show (ECES). There, amidst the
-fervor of the demo competition, they unveiled their masterpiece - a
-dentro like no other.
+Geometrical Dreams - what are they and why do we want them? These
+questions were answered by the demo group
+The Silents on a fateful day, June 15th, 1991, at the
+Eskilstuna Computer Entertainment Show (ECES), where they
+entered the demo competition with a dentro with this name.
 
 [[file:geo.png]]
 
-A dentro, that elusive creation nestled between a demo and an intro,
-emerged into the limelight with Geometrical Dreams, or GD for the
-initiated. With a runtime of approximately five minutes - a standard
-for such marvels - GD was tailored for the Amiga OCS, teasing the
+A dentro is a rare type of production classified somewhere between a
+demo and an intro, and GD has a run time of about five minute - quite
+typical for such productions. It was created for Amiga OCS, teasing the
 audience with a glimpse of the forthcoming demo, Power and Glory (a
 legend whispered but never realized).
 
-Picture this: a time when the spectacle of rotating vector objects,
-those 3D marvels birthed from polygons, held sway over the hearts of
-enthusiasts. The Silents, in their wisdom, chose a grand vector ball
-as the pièce de résistance, dominating the screen with its hypnotic
-gyrations. Though they confessed their vector routine remained
-unoptimized, hinting at a hidden potential for speed enhancement, it
-hardly detracted from the overall spectacle.
+It was made at a time when the spectacle of rotating vector objects,
+3D models rendered using polygons - was very popular, and The Silents
+chose a big vector ball as the pièce de résistance - in its zoomed in view
+it fills the whole screen at a decent frame rate. They explained that
+the vector routine was still unoptimized, and could be sped up by at
+least 10%. The overall dentro composition consists of transitioning
+between a vector object, showing a bitmap picture and showing
+information text and greetings.
 
 \newpage
 
-But let's not overlook the finer details. Here is the fully
-symmetrical representation of the group's insignia, TSL, an ode to The
-Silents' legacy:
+A nice, geometrical detail is the vector object representing the
+group's name abbreviation, TSL. Its shape is reproduced here in ASCII:
 
 #+begin_example
 ##### ######
@@ -38,10 +37,9 @@ Silents' legacy:
 
 #+end_example
 
-Ah, the music! A symphony in the unmistakable style of The Silents,
-weaving a tapestry of melodies that echo through the corridors of
-time. Each note a whisper from the past, invoking memories of
-productions long cherished.
+The music is what I liked the most about the demo. It is in typical The
+Silents style, and has a catchy melody with instruments I seem to
+recall from other productions by the group.
 
 Now, as we ponder the legacy of this dream, what implications does it
 hold in the year 2022? True, The Silents themselves downplay its
@@ -50,10 +48,9 @@ of three days and assembled from scattered fragments. Yet, it clinched
 the second spot in the competition, leaving an indelible mark on those
 who beheld its splendor.
 
-For those of us who yearn for one last geometric reverie, GD stands as
-a beacon of hope. Its vibrant hues and resounding four-track symphony
-serve as a testament to the technological marvels of yore, a modest
-sparkler illuminating the path toward artistic transcendence.
+With that said, it is still a nice dentro to watch today in the style
+of its time, and I even remember the tune today, from hearing it back
+in 1991.
 
 \vspace{1.5cm}
 

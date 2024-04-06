@@ -4,6 +4,26 @@
 #+DATE: 2022-12-05
 #+OPTIONS: author:t date:t ^:nil
 #+ATTR_LATEX: :width 5cm
+#+LaTeX_HEADER: \usepackage{background}
+#+LaTeX_HEADER: \usetikzlibrary{calc}
+
+#+BEGIN_EXPORT latex
+\backgroundsetup{
+  scale=1,
+  angle=0,
+  opacity=1,
+  color=black,
+  contents={
+    \begin{tikzpicture}[overlay,remember picture]
+      \draw[line width=5pt,rounded corners=10pt]
+        ($(current page.north west) + (1cm,-1cm)$)
+        rectangle
+        ($(current page.south east) + (-1cm,1cm)$);
+    \end{tikzpicture}
+  }
+}
+#+END_EXPORT
+
 
 file:geometry-lost.png
 

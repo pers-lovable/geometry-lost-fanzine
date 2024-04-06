@@ -30,7 +30,11 @@ INSTANTIATED_REPORT_SOURCE_FILE = $(REPORT_SOURCE_FILE).rand_shapes.org
 
 $(REPORT): clean $(OUTPUT_DIR) shapes $(INSTANTIATED_REPORT_SOURCE_FILE) $(IMAGES)
 ifdef RUN_LOCAL
-	env REPORT_SOURCE_FILE=$(INSTANTIATED_REPORT_SOURCE_FILE) OUTPUT_DIR=$(OUTPUT_DIR) DATA_DIR=$(PWD) TEXMFOUTPUT=$(OUTPUT_DIR) emacs --eval '(setq org-confirm-babel-evaluate nil)' --batch --load src/org2pdf.el
+	env REPORT_SOURCE_FILE=$(INSTANTIATED_REPORT_SOURCE_FILE) \
+	    OUTPUT_DIR=$(OUTPUT_DIR) \
+	    DATA_DIR=$(PWD) \
+	    TEXMFOUTPUT=$(OUTPUT_DIR) \
+	    emacs --eval '(setq org-confirm-babel-evaluate nil)' --batch --load src/org2pdf.el
 else
 	podman run --rm -i -e DATA_DIR=/data -e OUTPUT_DIR=/outputdir -e REPORT_SOURCE_FILE=$(INSTANTIATED_REPORT_SOURCE_FILE) \
 		-v $(PWD):/data:Z -v $(OUTPUT_DIR):/outputdir:Z  $(IMAGENAME)

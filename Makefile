@@ -55,7 +55,7 @@ $(OUTPUT_DIR)/shapes.sh:
 
 
 shapes:
-	python src/gen_shapes.py $(OUTPUT_DIR)
+	python3 src/gen_shapes.py $(OUTPUT_DIR)
 
 
 clean:

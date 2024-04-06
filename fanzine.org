@@ -2,10 +2,23 @@
 #+TITLE: Geometry Lost #2
 #+AUTHOR: Joakim Verona, Per Weijnitz, AI, SGC
 #+DATE: 2022-12-05
-#+OPTIONS: author:t date:t ^:nil
+#+OPTIONS: author:t date:t ^:nil toc:nil
 #+ATTR_LATEX: :width 5cm
+
 #+LaTeX_HEADER: \usepackage{background}
 #+LaTeX_HEADER: \usetikzlibrary{calc}
+#+LaTeX_HEADER: \usepackage{hyperref}
+#+LaTeX_HEADER: \pagecolor[rgb]{0.35,0.35,0.35}   %gray
+#+LaTeX_HEADER: \color[rgb]{1,1,1}       %white
+
+#+LaTeX_HEADER: \usepackage{titling}
+#+LaTeX_HEADER: \pretitle{\begin{flushleft}\begin{Large}}
+#+LaTeX_HEADER: \posttitle{\end{Large}\end{flushleft}}
+#+LaTeX_HEADER: \preauthor{\begin{flushleft}\begin{Large}}
+#+LaTeX_HEADER: \postauthor{\end{Large}\end{flushleft}}
+#+LaTeX_HEADER: \predate{\begin{flushleft}}
+#+LaTeX_HEADER: \postdate{\end{flushleft}}
+#+LaTeX_HEADER: \setcounter{secnumdepth}{0}
 
 #+BEGIN_EXPORT latex
 \newcommand{\SetBgImage}[3]{
@@ -13,16 +26,16 @@
     scale=1,
     angle=0,
     opacity=1,
-    color=black,
+    color=white,
     contents={
       \begin{tikzpicture}[overlay,remember picture]
         \draw[line width=5pt,rounded corners=10pt]
           ($(current page.north west) + (1cm,-1cm)$)
           rectangle
           ($(current page.south east) + (-1cm,1cm)$);
-        \node[anchor=north east] at ($(current page.north east) + (-2.5cm,-2.5cm)$) {\includegraphics[width=2.5cm]{#1}};
-        \node[anchor=south east] at ($(current page.south east) + (-2.5cm,1.5cm)$) {\includegraphics[width=2.5cm]{#2}};
-        \node[anchor=south west] at ($(current page.south west) + (1cm,1cm)$) {\includegraphics[width=2.5cm]{#3}};
+        \node[anchor=north east] at ($(current page.north east) + (-1.5cm,-1.5cm)$) {\includegraphics[width=2.5cm]{#1}};
+        \node[anchor=south east] at ($(current page.south east) + (-1.5cm,1.5cm)$) {\includegraphics[width=2.5cm]{#2}};
+        \node[anchor=south west] at ($(current page.south west) + (1.5cm,1.5cm)$) {\includegraphics[width=2.5cm]{#3}};
       \end{tikzpicture}
     }
   }
@@ -30,23 +43,24 @@
 \AtEndDocument{\SetBgImage{}{}{}}
 #+END_EXPORT
 
+
 \SetBgImage{}{}{}
 file:geometry-lost.png
 
 \newpage
-\SetBgImage{random_shape1.eps}{random_shape0.eps}{random_shape1.eps}
+\SetBgImage$SHAPE0
 #+INCLUDE: sthlm-geometry.org
 
 \newpage
-\SetBgImage{random_shape1.eps}{random_shape0.eps}{random_shape1.eps}
+\SetBgImage$SHAPE1
 #+INCLUDE: geometric-man.org
 
 \newpage
-\SetBgImage{random_shape1.eps}{random_shape0.eps}{random_shape1.eps}
+\SetBgImage$SHAPE2
 #+INCLUDE: geometric-metafors.org
 
 \newpage
-\SetBgImage{random_shape1.eps}{random_shape0.eps}{random_shape1.eps}
+\SetBgImage$SHAPE3
 #+INCLUDE:  geometrical-dreams.org
 
 \newpage
@@ -55,5 +69,5 @@ file:geometric-man.png
 file:geometry-failed.png
 
 \newpage
-\SetBgImage{random_shape1.eps}{random_shape0.eps}{random_shape1.eps}
+\SetBgImage$SHAPE4
 #+INCLUDE:  boullee.org

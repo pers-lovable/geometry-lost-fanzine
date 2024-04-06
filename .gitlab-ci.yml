@@ -15,6 +15,7 @@ include:
 
 generate:
   stage: build
+  needs: ["build"]
   image: $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:$CI_COMMIT_SHA
   before_script:
   - echo $CI_JOB_ID
@@ -36,6 +37,7 @@ generate:
 
 release:
   stage: build
+  needs: ["generate"]
   image: registry.gitlab.com/gitlab-org/release-cli:latest
   script:
   - echo 'running release_job'

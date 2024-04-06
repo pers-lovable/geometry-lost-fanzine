@@ -8,47 +8,52 @@
 #+LaTeX_HEADER: \usetikzlibrary{calc}
 
 #+BEGIN_EXPORT latex
-\backgroundsetup{
-  scale=1,
-  angle=0,
-  opacity=1,
-  color=black,
-  contents={
-    \begin{tikzpicture}[overlay,remember picture]
-      \draw[line width=5pt,rounded corners=10pt]
-        ($(current page.north west) + (1cm,-1cm)$)
-        rectangle
-        ($(current page.south east) + (-1cm,1cm)$);
-    \end{tikzpicture}
+\newcommand{\SetBgImage}[3]{
+  \backgroundsetup{
+    scale=1,
+    angle=0,
+    opacity=1,
+    color=black,
+    contents={
+      \begin{tikzpicture}[overlay,remember picture]
+        \draw[line width=5pt,rounded corners=10pt]
+          ($(current page.north west) + (1cm,-1cm)$)
+          rectangle
+          ($(current page.south east) + (-1cm,1cm)$);
+        \node[anchor=north east] at ($(current page.north east) + (-2.5cm,-2.5cm)$) {\includegraphics[width=2.5cm]{#1}};
+        \node[anchor=south east] at ($(current page.south east) + (-2.5cm,1.5cm)$) {\includegraphics[width=2.5cm]{#2}};
+        \node[anchor=south west] at ($(current page.south west) + (1cm,1cm)$) {\includegraphics[width=2.5cm]{#3}};
+      \end{tikzpicture}
+    }
   }
 }
+\AtEndDocument{\SetBgImage{}{}{}}
 #+END_EXPORT
 
-
+\SetBgImage{}{}{}
 file:geometry-lost.png
 
 \newpage
-
+\SetBgImage{random_shape1.eps}{random_shape0.eps}{random_shape1.eps}
 #+INCLUDE: sthlm-geometry.org
 
 \newpage
-
+\SetBgImage{random_shape1.eps}{random_shape0.eps}{random_shape1.eps}
 #+INCLUDE: geometric-man.org
 
 \newpage
-
+\SetBgImage{random_shape1.eps}{random_shape0.eps}{random_shape1.eps}
 #+INCLUDE: geometric-metafors.org
 
 \newpage
-
+\SetBgImage{random_shape1.eps}{random_shape0.eps}{random_shape1.eps}
 #+INCLUDE:  geometrical-dreams.org
 
 \newpage
-
+\SetBgImage{}{}{}
 file:geometric-man.png
-
 file:geometry-failed.png
 
 \newpage
-
+\SetBgImage{random_shape1.eps}{random_shape0.eps}{random_shape1.eps}
 #+INCLUDE:  boullee.org

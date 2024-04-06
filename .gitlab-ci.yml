@@ -10,7 +10,8 @@ include:
 
 
 generate:
-  stage: generate
+  stage: release
+  needs: ["release"]
   image: $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:$CI_COMMIT_SHA
   before_script:
   - echo $CI_JOB_ID

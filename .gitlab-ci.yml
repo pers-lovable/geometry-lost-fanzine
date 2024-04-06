@@ -27,8 +27,6 @@ generate:
     - release/fanzine.pdf
     reports:
       dotenv: generate.env
-  only:
-  - main
 
 
 
@@ -50,5 +48,3 @@ release:
       links:
       - name: Geometry Lost Fanzine
         url: https://gitlab.com/sgc1000/geometry-lost-fanzine/-/jobs/${GE_JOB_ID}/artifacts/browse/release/
-  only:
-  - main

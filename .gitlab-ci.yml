@@ -10,7 +10,7 @@ include:
 
 
 generate:
-  stage: release
+  stage: build
   needs: ["release"]
   image: $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:$CI_COMMIT_SHA
   before_script:
@@ -18,7 +18,7 @@ generate:
   - echo GE_JOB_ID=$CI_JOB_ID >> generate.env
   script:
   - |
-    make
+    make || exit 1
     mkdir release
     mv output/org-pdf-latex-output.txt release/
     mv output/fanzine.pdf release/fanzine.pdf
@@ -34,7 +34,7 @@ generate:
 
 
 release:
-  stage: release
+  stage: build
   image: registry.gitlab.com/gitlab-org/release-cli:latest
   script:
   - echo 'running release_job'

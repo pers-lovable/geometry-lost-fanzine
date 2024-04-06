@@ -1,4 +1,4 @@
-* Early 90's Demo Scene Production Review
+* Geometrical Dreams
 
 Geometrical Dreams - what are they and why do we want them? These
 questions were answered by the demo group
@@ -9,7 +9,7 @@ entered the demo competition with a dentro with this name.
 [[file:geo.png]]
 
 A dentro is a rare type of production classified somewhere between a
-demo and an intro, and GD has a run time of about five minute - quite
+demo and an intro, and Geometrical Dreams has a run time of about five minute - quite
 typical for such productions. It was created for Amiga OCS, teasing the
 audience with a glimpse of the forthcoming demo, Power and Glory (a
 legend whispered but never realized).
@@ -54,7 +54,7 @@ in 1991.
 
 \vspace{1.5cm}
 
-Credits:
+Dentro credits:
 
 Music - Blaizer and Marillion
 
@@ -62,5 +62,5 @@ Graphics - Atlas and Chevron
 
 Coding - Delery
 
-
+#+attr_latex: :height 2in
 [[file:qrcode.png]]

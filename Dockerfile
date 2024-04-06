@@ -8,7 +8,8 @@ RUN apt-get -y update \
 FROM fanzine-base-build
 
 
-COPY org2pdf.el /app/
+COPY src/org2pdf.el /app/
+
 WORKDIR /data
 
 CMD env TEXMFOUTPUT=/outputdir emacs --batch --load /app/org2pdf.el

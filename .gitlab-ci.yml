@@ -5,6 +5,7 @@ workflow:
 
 variables:
   TEST_DISABLED: 1
+  CI_DEBUG_TRACE: "true"
 
 
 include:

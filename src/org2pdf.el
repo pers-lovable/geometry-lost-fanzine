@@ -14,7 +14,7 @@
     (find-file report-source-file)
     (set-buffer report-source-file)
     (add-to-list 'org-latex-default-packages-alist "\\PassOptionsToPackage{hyphens}{url}")
-    (customize-set-value 'org-latex-hyperref-template "\\hypersetup{\n pdfauthor={%a},\n pdftitle={%t},\n pdfkeywords={%k}, pdfsubject={%d},\n pdfcreator={%c},\n pdflang={%L},\n colorlinks=true,urlcolor=blue,linkcolor=blue}\n"))
+    (customize-set-value 'org-latex-hyperref-template "\\hypersetup{\n pdfauthor={%a},\n pdftitle={%t},\n pdfkeywords={%k}, pdfsubject={%d},\n pdfcreator={%c},\n pdflang={%L},\n colorlinks=true,urlcolor=white,linkcolor=white}\n"))
     (org-latex-export-to-pdf))
 
 

@@ -23,7 +23,7 @@ WORKDIR /app
 
 FROM fanzine-base-build AS build
 
-RUN echo "CHECK0" ; ls -l && make
+RUN make
 
 
 

@@ -25,7 +25,6 @@ generate:
   - echo GE_JOB_ID=$CI_JOB_ID >> generate.env
   script:
   - |
-    make || exit 1
     mkdir release
     mv output/org-pdf-latex-output.txt release/
     mv output/fanzine.pdf release/fanzine.pdf

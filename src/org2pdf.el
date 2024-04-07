@@ -2,13 +2,6 @@
   (interactive)
   (customize-set-variable 'org-export-with-sub-superscripts nil)
   (customize-set-variable 'org-export-with-emphasize nil)
-  ;; Why copy all source files to the output directory first?
-  ;; At export time, the current working directory needs to be the output directory.
-  ;; At export time, all org-links and includes need to be resolvable.
-  ;; So unless we want to hard code directory names in org-modes links and includes
-  ;; to point to the source directory, we can solve it by copying the source files
-  ;; into the output directory.
-  (shell-command (concat "rsync -va --protect-args " data-dir "/* " output-dir "/"))
 
   (let ((default-directory output-dir))
     (find-file report-source-file)

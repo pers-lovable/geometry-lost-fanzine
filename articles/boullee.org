@@ -23,7 +23,7 @@ of impression, drawing from ancient Greek notions of the sublime.
 
 Ideas once praised are now lost and replaced with others.
 
-[[file:Boullée_-_Cénotaphe_égyptien_-_élévation.jpg]]
+[[file:../assets/Boullée_-_Cénotaphe_égyptien_-_élévation.jpg]]
 
 \newpage
 
@@ -55,7 +55,7 @@ experience. The cavernous interior, illuminated by a single source of
 light, heightened the sense of awe and contemplation, inviting
 visitors to ponder the mysteries of the universe.
 
-[[file:Newton_memorial_boullee.jpg]]
+[[file:../assets/Newton_memorial_boullee.jpg]]
 
 His projects often transcended mere functionality to
 provoke profound psychological and spiritual responses. The Project
@@ -64,7 +64,7 @@ heavenward, evoking a sense of spiritual elevation. The Design for a
 Royal Library proposed a cylindrical form adorned with celestial
 motifs, invoking the grandeur of knowledge and enlightenment.
 
-[[file:Etienne-Louis_Boullée,_Perspective_View_of_the_Interior_of_a_Metropolitan_Church_small.jpg]]
+[[file:../assets/Etienne-Louis_Boullée,_Perspective_View_of_the_Interior_of_a_Metropolitan_Church_small.jpg]]
 
 In Boullée's architectural visions, geometry ceased to be a tool of
 construction; it became a language of emotion and meaning. His designs

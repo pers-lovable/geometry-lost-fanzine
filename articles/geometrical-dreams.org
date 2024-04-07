@@ -6,7 +6,7 @@ The Silents on a fateful day, June 15th, 1991, at the
 Eskilstuna Computer Entertainment Show (ECES), where they
 entered the demo competition with a dentro with this name.
 
-[[file:geo.png]]
+[[file:../assets/geo.png]]
 
 A dentro is a rare type of production classified somewhere between a
 demo and an intro, and Geometrical Dreams has a run time of about five minute - quite
@@ -63,4 +63,4 @@ Graphics - Atlas and Chevron
 Coding - Delery
 
 #+attr_latex: :height 2in
-[[file:qrcode.png]]
+[[file:../assets/qrcode.png]]

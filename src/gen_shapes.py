@@ -181,16 +181,16 @@ if __name__ == "__main__":
     box_width, box_height = 200, 200
 
     tetartoid_commands = tetartoid(1,1.5,2)
-    write_to_file("shape_0.eps", tetartoid_commands, box_width, box_height)
+    write_to_file(f"{output_dir}/shape_0.eps", tetartoid_commands, box_width, box_height)
 
     regular_dodecahedron_commands = regular_dodecahedron()
-    write_to_file("shape_1.eps", regular_dodecahedron_commands, box_width, box_height)
+    write_to_file(f"{output_dir}/shape_1.eps", regular_dodecahedron_commands, box_width, box_height)
 
     pyritohedron_commands = pyritohedron(2 / (1 + math.sqrt(5)))
-    write_to_file("shape_2.eps", pyritohedron_commands, box_width, box_height)
+    write_to_file(f"{output_dir}/shape_2.eps", pyritohedron_commands, box_width, box_height)
 
     icosahedron_commands = icosahedron()
-    write_to_file("shape_3.eps", icosahedron_commands, box_width, box_height)
+    write_to_file(f"{output_dir}/shape_3.eps", icosahedron_commands, box_width, box_height)
 
     cube_commands = cube()
-    write_to_file("shape_4.eps", cube_commands, box_width, box_height)
+    write_to_file(f"{output_dir}/shape_4.eps", cube_commands, box_width, box_height)

@@ -5,12 +5,16 @@
 #+OPTIONS: author:t date:t ^:nil toc:nil
 #+ATTR_LATEX: :width 5cm
 
+# Load packages needed for background shapes
 #+LaTeX_HEADER: \usepackage{background}
 #+LaTeX_HEADER: \usetikzlibrary{calc}
 #+LaTeX_HEADER: \usepackage{hyperref}
+
+# Customize main background and text colors
 #+LaTeX_HEADER: \pagecolor[rgb]{0.35,0.35,0.35}   %gray
 #+LaTeX_HEADER: \color[rgb]{1,1,1}       %white
 
+# Format the title page:
 #+LaTeX_HEADER: \usepackage{titling}
 #+LaTeX_HEADER: \pretitle{\begin{flushleft}\begin{Large}}
 #+LaTeX_HEADER: \posttitle{\end{Large}\end{flushleft}}
@@ -44,30 +48,39 @@
 #+END_EXPORT
 
 
+# TODO: it technically works to supply three empty file names as shape images,
+# and can be used to produce pages without shapes, but it produces ugly
+# latex compilation errors, so see if we can find a way to add conditionals to the
+# SetBgImage image insertion parts.
+
 \SetBgImage{}{}{}
-file:geometry-lost.png
+file:assets/geometry-lost.png
+
+
+# What are all those $SHAPE0 variables below you ask.
+# They are envsubsted from the Makefile
 
 \newpage
 \SetBgImage$SHAPE0
-#+INCLUDE: sthlm-geometry.org
+#+INCLUDE: articles/sthlm-geometry.org
 
 \newpage
 \SetBgImage$SHAPE1
-#+INCLUDE: geometric-man.org
+#+INCLUDE: articles/geometric-man.org
 
 \newpage
 \SetBgImage$SHAPE2
-#+INCLUDE: geometric-metafors.org
+#+INCLUDE: articles/geometric-metafors.org
 
 \newpage
 \SetBgImage$SHAPE3
-#+INCLUDE:  geometrical-dreams.org
+#+INCLUDE:  articles/geometrical-dreams.org
 
 \newpage
 \SetBgImage{}{}{}
-file:geometric-man.png
-file:geometry-failed.png
+file:assets/geometric-man.png
+file:assets/geometry-failed.png
 
 \newpage
 \SetBgImage$SHAPE4
-#+INCLUDE:  boullee.org
+#+INCLUDE:  articles/boullee.org

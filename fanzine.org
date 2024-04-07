@@ -47,6 +47,8 @@
 \AtEndDocument{\SetBgImage{}{}{}}
 #+END_EXPORT
 
+\pagenumbering{gobble}
+
 
 # TODO: it technically works to supply three empty file names as shape images,
 # and can be used to produce pages without shapes, but it produces ugly
@@ -59,14 +61,20 @@
 
 \newpage
 \SetBgImage$SHAPE0
+\pagenumbering{arabic}
+\setcounter{page}{1}
 #+INCLUDE: articles/sthlm-geometry.org
 
 \newpage
 \SetBgImage{}{}{}
+\setcounter{savepage}{\value{page}}
+\pagenumbering{gobble}
 file:assets/geometry-lost.png
 
 \newpage
 \SetBgImage$SHAPE1
+\pagenumbering{arabic}
+\setcounter{page}{3}
 #+INCLUDE: articles/geometric-man.org
 
 \newpage
@@ -79,9 +87,12 @@ file:assets/geometry-lost.png
 
 \newpage
 \SetBgImage{}{}{}
+\pagenumbering{gobble}
 file:assets/geometric-man.png
 file:assets/geometry-failed.png
 
 \newpage
 \SetBgImage$SHAPE4
+\pagenumbering{arabic}
+\setcounter{page}{11}
 #+INCLUDE:  articles/boullee.org

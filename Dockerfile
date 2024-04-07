@@ -31,3 +31,4 @@ RUN make
 FROM debian:11-slim
 
 COPY --from=build /app/output/fanzine.pdf /app/output/fanzine.pdf
+COPY --from=build /app/output/org-pdf-latex-output.txt /app/output/org-pdf-latex-output.txt

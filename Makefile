@@ -20,7 +20,7 @@ all: $(REPORT) $(REPORT_BOOKLET)
 
 all-container: $(OUTPUT_DIR)
 	podman build -t $(IMAGENAME) . \
-	&& podman run --rm -i -v $(OUTPUT_DIR):/outputdir:Z $(IMAGENAME) cp /app/output/fanzine.*pdf /outputdir/
+	&& podman run --rm -i -v $(OUTPUT_DIR):/outputdir:Z $(IMAGENAME) bash -c "cp /app/output/fanzine.*pdf /outputdir/"
 
 
 

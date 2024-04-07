@@ -1,6 +1,10 @@
+# Something, maybe the release, triggers a second redundant job, which
+# is also conflicting with the main job. I found that CI_COMMIT_TAG == null
+# is a way to check for the redundant job job.
 workflow:
   rules:
     - if: $CI_PIPELINE_SOURCE == 'push' && $CI_COMMIT_TAG == null
+
 
 
 variables:

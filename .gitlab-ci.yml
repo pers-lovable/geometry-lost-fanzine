@@ -26,8 +26,8 @@ generate:
   script:
   - |
     mkdir release
-    mv output/org-pdf-latex-output.txt release/
-    mv output/fanzine.pdf release/fanzine.pdf
+    mv /app/output/org-pdf-latex-output.txt release/
+    mv /app/output/fanzine.pdf release/fanzine.pdf
     echo "generation successful"
   artifacts:
     paths:

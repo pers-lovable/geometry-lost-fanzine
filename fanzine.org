@@ -52,6 +52,7 @@
 # and can be used to produce pages without shapes, but it produces ugly
 # latex compilation errors, so see if we can find a way to add conditionals to the
 # SetBgImage image insertion parts.
+\SetBgImage{}{}{}
 
 # What are all those $SHAPE0 variables below you ask.
 # They are envsubsted from the Makefile

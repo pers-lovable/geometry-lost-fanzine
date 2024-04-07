@@ -56,6 +56,7 @@
 # What are all those $SHAPE0 variables below you ask.
 # They are envsubsted from the Makefile
 
+\newpage
 \SetBgImage$SHAPE0
 #+INCLUDE: articles/sthlm-geometry.org
 

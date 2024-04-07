@@ -53,16 +53,15 @@
 # latex compilation errors, so see if we can find a way to add conditionals to the
 # SetBgImage image insertion parts.
 
-\SetBgImage{}{}{}
-file:assets/geometry-lost.png
-
-
 # What are all those $SHAPE0 variables below you ask.
 # They are envsubsted from the Makefile
 
-\newpage
 \SetBgImage$SHAPE0
 #+INCLUDE: articles/sthlm-geometry.org
+
+\newpage
+\SetBgImage{}{}{}
+file:assets/geometry-lost.png
 
 \newpage
 \SetBgImage$SHAPE1

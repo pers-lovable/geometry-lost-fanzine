@@ -6,20 +6,21 @@
 IMAGENAME          = fanzine-builder
 REPORT_SOURCE_FILE = fanzine.org
 REPORT             = $(addsuffix .pdf,$(basename $(REPORT_SOURCE_FILE)))
+REPORT_BOOKLET     = $(addsuffix .booklet.pdf,$(basename $(REPORT)))
 OUTPUT_DIR         = $(PWD)/output
 IMAGES             = $(OUTPUT_DIR)/assets/geometry-lost.png $(OUTPUT_DIR)/assets/geometric-man.png $(OUTPUT_DIR)/assets/geometry-failed.png
 NR_SHAPES          = 5 # stupid hack: this is the number of files produced by src/gen_shapes.py
 
 
 
-all: $(REPORT)
+all: $(REPORT) $(REPORT_BOOKLET)
 	echo "INFO: BUILD COMPLETE" >&2
 
 
 
 all-container: $(OUTPUT_DIR)
 	podman build -t $(IMAGENAME) . \
-	&& podman run --rm -i -v $(OUTPUT_DIR):/outputdir:Z $(IMAGENAME) cp /app/output/fanzine.pdf /outputdir/
+	&& podman run --rm -i -v $(OUTPUT_DIR):/outputdir:Z $(IMAGENAME) cp /app/output/fanzine.*pdf /outputdir/
 
 
 
@@ -35,6 +36,11 @@ all-container: $(OUTPUT_DIR)
 # So unless we want to hard code directory names in org-modes links and includes
 # to point to the source directory, we can solve it by copying the source files
 # into the output directory.
+
+
+
+$(REPORT_BOOKLET): $(REPORT)
+	pdfjam --paper a4paper --booklet true --landscape --outfile $(OUTPUT_DIR)/$@ $(OUTPUT_DIR)/$<
 
 
 

@@ -28,10 +28,12 @@ generate:
     mkdir release
     mv /app/output/org-pdf-latex-output.txt release/
     mv /app/output/fanzine.pdf release/fanzine.pdf
+    mv /app/output/fanzine.booklet.pdf release/fanzine.booklet.pdf
     echo "generation successful"
   artifacts:
     paths:
     - release/fanzine.pdf
+    - release/fanzine.booklet.pdf
     reports:
       dotenv: generate.env
 

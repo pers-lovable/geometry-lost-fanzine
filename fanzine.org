@@ -1,6 +1,6 @@
 #+LATEX_CLASS: article
 #+TITLE: Geometry Lost #2
-#+AUTHOR: Joakim Verona, Per Weijnitz, AI, SGC
+#+AUTHOR: Joakim Verona, Per Weijnitz, SGC
 #+DATE: Present day
 #+OPTIONS: author:t date:t ^:nil toc:nil
 #+ATTR_LATEX: :width 5cm

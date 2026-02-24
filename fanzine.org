@@ -22,6 +22,7 @@
 #+LaTeX_HEADER: \postauthor{\end{Large}\end{flushleft}}
 #+LaTeX_HEADER: \predate{\begin{flushleft}}
 #+LaTeX_HEADER: \postdate{\end{flushleft}}
+#+LaTeX_HEADER: \renewcommand{\maketitlehookd}{\vfill\begin{center}\includegraphics[width=0.8\linewidth]{assets/geometry-lost.png}\end{center}\vfill}
 #+LaTeX_HEADER: \setcounter{secnumdepth}{0}
 
 #+BEGIN_EXPORT latex
@@ -64,12 +65,6 @@
 \pagenumbering{arabic}
 \setcounter{page}{1}
 #+INCLUDE: articles/sthlm-geometry.org
-
-\newpage
-\SetBgImage{}{}{}
-\setcounter{savepage}{\value{page}}
-\pagenumbering{gobble}
-file:assets/geometry-lost.png
 
 \newpage
 \SetBgImage$SHAPE1

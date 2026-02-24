@@ -1,0 +1,49 @@
+name: Build Fanzine
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t fanzine-builder .
+
+      # The Dockerfile's final stage already ran `make` and placed the PDFs
+      # at /app/output/ — copy them out without starting a long-lived container.
+      - name: Extract PDFs from image
+        run: |
+          mkdir -p release
+          docker create --name fanzine-extract fanzine-builder
+          docker cp fanzine-extract:/app/output/fanzine.pdf         release/fanzine.pdf
+          docker cp fanzine-extract:/app/output/fanzine.booklet.pdf release/fanzine.booklet.pdf
+          docker rm fanzine-extract
+
+      # Keeps the PDFs accessible as downloadable artifacts on the Actions run page.
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: fanzine-pdfs
+          path: release/
+
+      # Creates a GitHub Release (equivalent to the GitLab release job).
+      # Tag is the short commit SHA, matching the original pipeline's convention.
+      - name: Create GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          SHORT_SHA="${GITHUB_SHA::7}"
+          gh release create "$SHORT_SHA" \
+            --title "Release $SHORT_SHA" \
+            --notes "Generated from commit [\`$SHORT_SHA\`](${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }})" \
+            release/fanzine.pdf \
+            release/fanzine.booklet.pdf

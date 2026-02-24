@@ -68,8 +68,7 @@
 
 \newpage
 \SetBgImage$SHAPE1
-\pagenumbering{arabic}
-\setcounter{page}{3}
+\setcounter{page}{2}
 #+INCLUDE: articles/geometric-man.org
 
 \newpage
@@ -89,5 +88,5 @@ file:assets/geometry-failed.png
 \newpage
 \SetBgImage$SHAPE4
 \pagenumbering{arabic}
-\setcounter{page}{11}
+\setcounter{page}{10}
 #+INCLUDE:  articles/boullee.org

@@ -9,12 +9,12 @@ entered the demo competition with a dentro with this name.
 [[file:../assets/geo.png]]
 
 A dentro is a rare type of production classified somewhere between a
-demo and an intro, and Geometrical Dreams has a run time of about five minute - quite
-typical for such productions. It was created for Amiga OCS, teasing the
-audience with a glimpse of the forthcoming demo, Power and Glory (a
-legend whispered but never realized).
+demo and an intro, and Geometrical Dreams has a run time of about five
+minute - quite typical for such productions. It was created for Amiga
+OCS, as a precursor of the planned, forthcoming demo, Power and Glory
+(which was never released but that is another story).
 
-It was made at a time when the spectacle of rotating vector objects,
+It was made at a time when rotating vector objects,
 3D models rendered using polygons - was very popular, and The Silents
 chose a big vector ball as the pièce de résistance - in its zoomed in view
 it fills the whole screen at a decent frame rate. They explained that
@@ -25,32 +25,30 @@ information text and greetings.
 
 \newpage
 
-A nice, geometrical detail is the vector object representing the
-group's name abbreviation, TSL. Its shape is reproduced here in ASCII:
+A nice, geometrical detail is the symmetric vector object representing
+the group's name abbreviation, TSL. Its shape is reproduced here in
+ASCII:
 
 #+begin_example
-##### ######
-    # #    #
-    # #### #
-    #    # #
-    ###### #####
-
+                ##### ######
+                    # #    #
+                    # #### #
+                    #    # #
+                    ###### #####
 #+end_example
 
 The music is what I liked the most about the demo. It is in typical The
 Silents style, and has a catchy melody with instruments I seem to
 recall from other productions by the group.
 
-Now, as we ponder the legacy of this dream, what implications does it
-hold nowadays? True, The Silents themselves downplay its
-significance, deeming it a spontaneous creation, born in the crucible
-of three days and assembled from scattered fragments. Yet, it clinched
-the second spot in the competition, leaving an indelible mark on those
-who beheld its splendor.
+Decades later, as we ponder the legacy of this dream, what
+implications does it hold nowadays? True, The Silents themselves
+downplay its significance, deeming it a spontaneous creation, born in
+the crucible of three days and assembled from scattered
+fragments. Yet, it achieved the honourable second place in the competition.
 
-With that said, it is still a nice dentro to watch today in the style
-of its time, and I even remember the tune today, from hearing it back
-in 1991.
+It is still a nice dentro to watch today in the style of its time, and
+I even remember the tune today, from hearing it back in 1991.
 
 \vspace{1.5cm}
 

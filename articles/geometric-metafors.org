@@ -1,43 +1,41 @@
 * Geometric Metaphors
-Imagine if you will a metaphor of sorts.
+Imagine, if you will, a metaphor of sorts.
 
-A man drives in a very expensive Humwee across the American Midwest.
-The driver, a producer of intense industrial techno, a niche but oddly
-lucrative subgenre, worn out from decades of substance abuse, gets
-lost and asks the way from a farmer, conveniently placed in the middle
-of these enormous plains. The driver asks the way. The farmer gently
-explains there is no way to go to point C from here. from A to B is
-fine, point C is not possible.  Geometry dissallows it. Angered, the
+A man drives in a very expensive Humvee across the American Midwest.
+The driver, a producer of intense industrial techno—a niche but oddly
+lucrative subgenre—worn out from decades of substance abuse, gets lost
+and asks the way from a farmer, conveniently placed in the middle of
+these enormous plains. The driver asks the way. The farmer gently
+explains there is no way to go to point C from here. From A to B is
+fine; point C is not possible. Geometry disallows it. Angered, the
 driver plows full steam ahead, only to discover the farmer was
 correct.
 
 Now imagine, if you will, another metaphor of sorts.
 
-There is a man in our
-midst, hes slightly better than us. Earns slightly better, has a
-slightly happier life overall. He explains to us he is the Judas
-Man, analogous to the Judas goat that leads his herd to the
-slaughter. He is blessed in this way by our secret overlords, that
-feast on the lives we live, but sometimes we need a little bit of
-encouragement from our peers, to get the taste just right.
-Judas Man explains theres really no way out. You can try all you want
-to escape the fold, with rebellious tatoos, punk hairdo, breaking taboos, or other ways to be
-special. All you can  ever come up with is within the well known limits and
-acceptable parameter variations. Judas Man fills no purpose, but he
-doesn't mind.
+There is a man in our midst; he’s slightly better than us. Earns
+slightly better, has a slightly happier life overall. He explains to
+us he is the Judas Man, analogous to the Judas goat that leads his
+herd to the slaughter. He is blessed in this way by our secret
+overlords that feast on the lives we live, but sometimes we need a
+little bit of encouragement from our peers to get the taste just
+right.
 
-Theres simply no fucking around with the laws of geometry.
+Judas Man explains there’s really no way out. You can try all you want
+to escape the fold with rebellious tattoos, punk hairdo, breaking
+taboos, or other ways to be special. All you can ever come up with is
+within the well-known limits and acceptable parameter variations.
+Judas Man fills no purpose, but he doesn't mind.
 
+There’s simply no fucking around with the laws of geometry.
 
 Final metaphor: Imagine I'm a guru, a priest, an autocratic
-businessman. I'm a path to your god. I offer a way out, via the
-infinite, which suffers not from the stiffling boundaries of
-geometry. I am to you what a sphere is to a square. You live in the
-flatlands, and I in the higher dimensions. Or, thats what I give the
-appearance of. Perhaps there is a way out, but do you really need me
-to help you find out?
-
-\vspace{1.5cm}
+businessman. I'm a path to your god. I offer a way out via the
+infinite, which suffers not from the stifling boundaries of geometry.
+I am to you what a sphere is to a square. You live in the flatlands,
+and I in the higher dimensions. Or, that’s what I give the appearance
+of. Perhaps there is a way out, but do you really need me to help you
+find out? \vspace{1.5cm}
 
 #+attr_latex: :height 1in
 [[file:../assets/qrcode-geometric-metafors.png]]

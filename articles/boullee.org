@@ -152,8 +152,3 @@ our artifacts say about humanity?
 \vspace{1.0cm}
 
 Images from Wikipedia and Wikimedia.
-
-\vspace{1.5cm}
-
-#+attr_latex: :height 2in
-[[file:../assets/qrcode-boullee.png]]

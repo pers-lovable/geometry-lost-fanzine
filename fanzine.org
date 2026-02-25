@@ -73,10 +73,14 @@
 
 \newpage
 \SetBgImage$SHAPE2
-#+INCLUDE: articles/geometric-metafors.org
+#+INCLUDE: articles/hypercube-topic-space-boundary.org
 
 \newpage
 \SetBgImage$SHAPE3
+#+INCLUDE: articles/geometric-metafors.org
+
+\newpage
+\SetBgImage$SHAPE4
 #+INCLUDE:  articles/geometrical-dreams.org
 
 \newpage
@@ -86,7 +90,7 @@ file:assets/geometric-man.png
 file:assets/geometry-failed.png
 
 \newpage
-\SetBgImage$SHAPE4
+\SetBgImage$SHAPE5
 \pagenumbering{arabic}
-\setcounter{page}{10}
+\setcounter{page}{11}
 #+INCLUDE:  articles/boullee.org

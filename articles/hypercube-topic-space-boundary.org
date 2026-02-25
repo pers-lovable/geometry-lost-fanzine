@@ -2,28 +2,27 @@
 #+BEGIN_VERSE
 I open the front door and step into the house
 The foyer presents itself as an ordinary entrance
-something feels subtly off
+Something feels subtly off
 I move forward into the living room
-the furniture  shifts slightly in the corner of my eyes
+The furniture shifts slightly in the corner of my eyes
 The wallpaper patterns stretch and contract
-Now Im in the kitchen
-Strangely when I turn a corner Im in the foyer again
+Now I'm in the kitchen
+Strangely, when I turn a corner I'm in the foyer again
 I retrace my steps hoping to find the living room
-Instead Im  in a bedroom Ive never seen before
+Instead I'm in a bedroom I've never seen before
 The disorientation grows stronger as I explore further
-Now Im in a hallway where doors lead to entirely new wings of the house
-Opening one door I step into  a garden
+Now I'm in a hallway where doors lead to entirely new wings of the house
+Opening one door I step into a garden
 I close the door and find myself in a study
-Every room feels connected to multiple others in  ways I dont understand
-The staircase winds endlessly upward yet I revisit places Ive already been
-The houses geography makes no sense
-each room exists in its own little pocket universe connected in
-ways my  mind struggles to comprehend
-As hours turns into days and days into unknowable stretches of time
-my mind can in the end ony hold one thought
-to finaly find the front door and step out into the blessed outside
+Every room feels connected to multiple others in ways I don't understand
+The staircase winds endlessly upward, yet I revisit places I've already been
+The house's geography makes no sense
+Each room exists in its own little pocket universe connected
+In ways my mind struggles to comprehend
+As hours turn into days and days into unknowable stretches of time
+My mind can in the end only hold one thought
+To finally find the front door and step out into the blessed outside
 #+END_VERSE
-
 \vspace{1.5cm}
 
 #+attr_latex: :width \linewidth

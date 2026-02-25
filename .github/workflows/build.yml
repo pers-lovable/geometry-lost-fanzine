@@ -3,7 +3,7 @@ name: Build Fanzine
 on:
   push:
     branches:
-      - main
+      - '**'
 
 jobs:
   build:
@@ -38,6 +38,7 @@ jobs:
       # Creates a GitHub Release (equivalent to the GitLab release job).
       # Tag is the short commit SHA, matching the original pipeline's convention.
       - name: Create GitHub Release
+        if: github.ref == 'refs/heads/main'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |

@@ -32,3 +32,10 @@ To finally find the front door and step out into the blessed outside
 
 #+attr_latex: :height 1in
 [[file:../assets/qrcode-geometry-hyperhouse.png]]
+
+-----
+#+BEGIN_EXPORT latex
+\begin{flushright}
+\textit{--- \textsc{Joakim Verona}}
+\end{flushright}
+#+END_EXPORT

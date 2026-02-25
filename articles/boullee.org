@@ -152,3 +152,10 @@ our artifacts say about humanity?
 \vspace{1.0cm}
 
 Images from Wikipedia and Wikimedia.
+
+-----
+#+BEGIN_EXPORT latex
+\begin{flushright}
+\textit{--- \textsc{Per Weijnitz}}
+\end{flushright}
+#+END_EXPORT

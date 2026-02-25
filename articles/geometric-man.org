@@ -125,3 +125,10 @@ do?"
 Leo thought about it and replied, "Look, it's not too bad. We can
 think, we can talk—that's a lot. We will figure something out. We
 always do."
+
+-----
+#+BEGIN_EXPORT latex
+\begin{flushright}
+\textit{--- \textsc{Joakim Verona}}
+\end{flushright}
+#+END_EXPORT

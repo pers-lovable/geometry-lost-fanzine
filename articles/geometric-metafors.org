@@ -39,3 +39,10 @@ find out? \vspace{1.5cm}
 
 #+attr_latex: :height 1in
 [[file:../assets/qrcode-geometric-metafors.png]]
+
+-----
+#+BEGIN_EXPORT latex
+\begin{flushright}
+\textit{--- \textsc{Joakim Verona}}
+\end{flushright}
+#+END_EXPORT

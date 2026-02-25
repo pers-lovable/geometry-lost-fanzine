@@ -11,3 +11,10 @@ Unavailable to me
 
 #+attr_latex: :height 1in
 [[file:../assets/qrcode-sthlm-geometry.png]]
+
+-----
+#+BEGIN_EXPORT latex
+\begin{flushright}
+\textit{--- \textsc{Joakim Verona}}
+\end{flushright}
+#+END_EXPORT

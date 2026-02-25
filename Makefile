@@ -11,6 +11,11 @@ OUTPUT_DIR         = $(PWD)/output
 IMAGES             = $(OUTPUT_DIR)/assets/geometry-lost.png $(OUTPUT_DIR)/assets/geometric-man.png $(OUTPUT_DIR)/assets/geometry-failed.png
 NR_SHAPES          = 5 # stupid hack: this is the number of files produced by src/gen_shapes.py
 
+QR_CODES = assets/qrcode.png \
+           assets/qrcode-geometry-hyperhouse.png \
+           assets/qrcode-sthlm-geometry.png \
+           assets/qrcode-geometric-metafors.png
+
 
 
 all: $(REPORT) $(REPORT_BOOKLET)
@@ -80,8 +85,24 @@ clean:
 
 
 
-copy-files: $(OUTPUT_DIR)
+copy-files: $(OUTPUT_DIR) $(QR_CODES)
 	rsync -va --protect-args './' '$</'
+
+
+
+assets/qrcode.png:
+	python3 src/gen_qrcode.py https://www.youtube.com/watch?v=UKfq2jX8Qe4 $@
+
+assets/qrcode-geometry-hyperhouse.png:
+	python3 src/gen_qrcode.py https://soundcloud.com/joakimv/geometry-hyperhouse $@
+
+assets/qrcode-sthlm-geometry.png:
+	python3 src/gen_qrcode.py https://soundcloud.com/joakimv/city-of-lost-geometry $@
+
+assets/qrcode-geometric-metafors.png:
+	python3 src/gen_qrcode.py https://soundcloud.com/joakimv/geometric-metaphors $@
+
+qrcodes: $(QR_CODES)
 
 
 

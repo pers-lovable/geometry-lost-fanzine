@@ -4,7 +4,8 @@ RUN apt-get -y update \
     && apt-get -y install emacs-nox \
     texlive-latex-base texlive-latex-extra texlive-extra-utils \
     texlive-latex-recommended texlive-font-utils rsync make python3.10 \
-    python3-numpy gettext-base inkscape make
+    python3-numpy python3-pip gettext-base inkscape make \
+    && pip3 install --no-cache-dir qrcode[pil]
 
 COPY src /app/src
 COPY assets /app/assets

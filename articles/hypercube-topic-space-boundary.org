@@ -1,0 +1,9 @@
+* hypercube topic space boundary
+
+#+attr_latex: :width \linewidth
+[[file:../assets/hypercube-topic-space-boundary.png]]
+
+\vspace{1.5cm}
+
+#+attr_latex: :height 2in
+[[file:../assets/qrcode-geometry-hyperhouse.png]]

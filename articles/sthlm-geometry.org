@@ -9,5 +9,5 @@ unavailable to me
 
 \vspace{1.5cm}
 
-#+attr_latex: :height 2in
+#+attr_latex: :height 1in
 [[file:../assets/qrcode-sthlm-geometry.png]]

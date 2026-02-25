@@ -31,5 +31,5 @@ to finaly find the front door and step out into the blessed outside
 
 \vspace{1.5cm}
 
-#+attr_latex: :height 2in
+#+attr_latex: :height 1in
 [[file:../assets/qrcode-geometry-hyperhouse.png]]

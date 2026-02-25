@@ -39,5 +39,5 @@ to help you find out?
 
 \vspace{1.5cm}
 
-#+attr_latex: :height 2in
+#+attr_latex: :height 1in
 [[file:../assets/qrcode-geometric-metafors.png]]

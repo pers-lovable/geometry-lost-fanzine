@@ -36,3 +36,8 @@ geometry. I am to you what a sphere is to a square. You live in the
 flatlands, and I in the higher dimensions. Or, thats what I give the
 appearance of. Perhaps there is a way out, but do you really need me
 to help you find out?
+
+\vspace{1.5cm}
+
+#+attr_latex: :height 2in
+[[file:../assets/qrcode-geometric-metafors.png]]

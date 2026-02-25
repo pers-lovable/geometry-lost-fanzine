@@ -6,3 +6,8 @@ spaces so dense
 new dimensions form
 unavailable to me
 #+END_VERSE
+
+\vspace{1.5cm}
+
+#+attr_latex: :height 2in
+[[file:../assets/qrcode-sthlm-geometry.png]]

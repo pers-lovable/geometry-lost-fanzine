@@ -1,10 +1,10 @@
 * Geometry Lost
 #+BEGIN_VERSE
-stockholm
-its geometry is now lost to me
-spaces so dense
-new dimensions form
-unavailable to me
+The City
+Its geometry is now lost to me
+Spaces so dense
+New dimensions form
+Unavailable to me
 #+END_VERSE
 
 \vspace{1.5cm}

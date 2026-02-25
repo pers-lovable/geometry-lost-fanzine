@@ -64,5 +64,3 @@ Coding - Delery
 
 #+attr_latex: :height 1in
 [[file:../assets/qrcode.png]]
-
-/tbd

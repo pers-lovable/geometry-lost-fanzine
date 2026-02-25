@@ -1,4 +1,4 @@
-* hypercube topic space boundary
+* Hypercube Topic Space Boundary
 #+BEGIN_VERSE
 I open the front door and step into the house
 The foyer presents itself as an ordinary entrance
